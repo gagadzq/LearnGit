@@ -121,6 +121,44 @@ $ cat .gitignore
 
 `$ git mv file_from file_to`
 
+#### 查看提交历史
+
+`$ git log`
+
+`$ git log -p` 查看提交差异
+
+`$ git log --stat` 简略统计
+
+#### 撤销操作
+
+```
+$ git commit -m 'initial commit'
+$ git add forgotten_file
+$ git commit --amend
+```
+
+`$ git reset HEAD <file>` 取消暂存文件
+
+`$ git checkout -- <file>...` 撤销文件修改
+
+#### 远程仓库
+
+`$ git remote -v` 查看所关联的远程仓库
+
+`$ git remote show <shortname>` 查看某仓库信息
+
+`$ git remote add <shortname> <url>` 添加新的远程仓库
+
+`$ git fetch <shortname>` 获取远程仓库数据
+
+`$ git push origin master` 推送到远程仓库
+
+`$ git remote rename pb paul` 修改简写名
+
+`$ git remote rm <shortname>` 删除远程仓库
+
+
+
 
 
 
